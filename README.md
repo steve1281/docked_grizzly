@@ -1,6 +1,7 @@
 # docked_grizzly
 
-Jersey and Grizzly in a docker container. Uses Java and Maven.
+Jersey and Grizzly in a docker container. (Uses Java and Maven.)
+
 `Reference: https://yurisubach.com/2016/07/14/jersey-dockerize/`
 
 ## Build
@@ -18,6 +19,9 @@ curl http://localhost:8080/myapp/myresource
 docker build --tag=myapp .
 docker run -p 18080:8080 -t -i myapp
 curl http://localhost:18080/myapp/myresource
+curl "http://localhost:18080/myapp/addit?a=10&b=20"
+curl "http://localhost:18080/myapp/additj?a=10&b=20"
+
 ```
 
 ## Notes
